@@ -81,33 +81,39 @@
          width: 25%;
         
 }
-.holder{
-    
-    justify-content: center;
-    align-items: center;
-    margin-top:10%;
-    margin-right: 18%;
-     margin-bottom: 25%;
-     width: 100vw;
-     height: 10vh;
-    
+.holder {
+position: absolute;
+  top: 85%; /* Adjust this value as needed */
+  left: 40%; /* To center horizontally */
+  transform: translateX(-50%);
+  z-index: 999; /* Ensure it's above other elements if needed */
+  
 }
+
 a{
     top: 45%;
 }
            
         }
-        @media(min-width:481px)and (max-width:768px){
+        @media(min-width:481px)and (max-width:1440px){
             .memory-card{
                 margin-left: 15%;
                 height: 20vh;
                 
             }
-            .memory{
-                margin-bottom: 20%;
+            .memory-game{
+                position: absolute;
+                top: 25%;
+                left: 2%;
             }
             .intro{
-                height: 10vh;
+                margin-top: 5%;
+
+                position: relative;
+            }
+            .holder{
+                position: absolute;
+                top: 40%;
             }
         }
      
@@ -141,18 +147,7 @@ a{
             <img class="frontface" src="dinosaur-found-china.jpg" alt="dinosaur">
             <img class="backface" src="questionmark.jpg" alt="questionmark">
           </div>
-          
-          <div class="memory-card" data-framework="money">
-            <img class="frontface" src="monkey.webp" alt="money">
-            <img class="backface" src="questionmark.jpg" alt="questionmark">
-          </div>
-      
-          <div class="memory-card" data-framework="dinosaur">
-            <img class="frontface" src="dinosaur-found-china.jpg" alt="dinosaur">
-            <img class="backface" src="questionmark.jpg" alt="questionmark">
-          </div>
-          
-      
+         
         
     </section>
  
